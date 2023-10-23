@@ -10,15 +10,11 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 
-local plugins = {
+vim.opt.rtp:prepend(lazypath)
+
+require("lazy").setup({
     -- Colorscheme --
-    {
-        'rose-pine/neovim',
-        init = function()
-            vim.cmd.colorscheme "rose-pine"
-        end,
-    },
-    -- Syntax highlighting --
+    'rose-pine/neovim',
     'nvim-treesitter/nvim-treesitter',
 
     -- Fuzzy Finder(s) --
@@ -42,7 +38,4 @@ local plugins = {
     -- Navigation
     'numToStr/Navigator.nvim',
     'szw/vim-maximizer',
-
-}
-vim.opt.rtp:prepend(lazypath)
-require("lazy").setup(plugins, opts)
+}, opts)
