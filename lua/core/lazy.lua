@@ -38,4 +38,10 @@ require("lazy").setup({
     -- Navigation
     'numToStr/Navigator.nvim',
     'szw/vim-maximizer',
+
+    -- Git integration
+    'TimUntersberger/neogit',
+
+    -- Terminal
+    {'akinsho/toggleterm.nvim', version = "*", config = true}
 }, opts)
