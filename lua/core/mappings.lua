@@ -9,13 +9,13 @@ vim.g.mapleader = ' '
 keymap.set('n', '<leader>nh', ':nohl<CR>')
 keymap.set('n', 'x', '"_x')
 
-keymap.set('n', '<leader>+', '<c-a>')          -- increment selected number
-keymap.set('n', '<leader>-', '<c-x>')          -- decrement selected number
+keymap.set('n', '<leader>+', '<c-a>')       -- increment selected number
+keymap.set('n', '<leader>-', '<c-x>')       -- decrement selected number
 
-keymap.set('n', '<leader>sv', '<c-w>v')        -- split window vertically
-keymap.set('n', '<leader>sh', '<c-w>s')        -- split window horizontally
-keymap.set('n', '<leader>se', '<c-w>=')        -- make split windows equal width (if changed)
-keymap.set('n', '<leader>sx', ':close<cr>')    -- close current split window
+keymap.set('n', '<leader>sv', '<c-w>v')     -- split window vertically
+keymap.set('n', '<leader>sh', '<c-w>s')     -- split window horizontally
+keymap.set('n', '<leader>se', '<c-w>=')     -- make split windows equal width (if changed)
+keymap.set('n', '<leader>sx', ':close<cr>') -- close current split window
 
 -- NETRW
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -31,7 +31,7 @@ keymap.set('n', 'J', 'mzJ`z')
 keymap.set('n', '<leader>y', "\"+y")
 keymap.set('v', '<leader>y', "\"+y")
 
--- renaming good 
+-- renaming good
 keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Plugins --
@@ -53,3 +53,6 @@ keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]])
 keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]])
 keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]])
 keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]])
+
+-- Undotree
+keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)

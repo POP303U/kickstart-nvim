@@ -43,5 +43,8 @@ require("lazy").setup({
     'TimUntersberger/neogit',
 
     -- Terminal
-    {'akinsho/toggleterm.nvim', version = "*", config = true}
+    { 'akinsho/toggleterm.nvim', version = "*", config = true },
+
+    -- undotree
+    'mbbill/undotree',
 }, opts)
