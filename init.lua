@@ -1,4 +1,4 @@
--- load basic settings
+--load basic settings
 require 'core.lazy'
 require 'core.mappings'
 require 'core.options'
@@ -12,3 +12,4 @@ require 'core.plugins.navigator'
 require 'core.plugins.rose-pine'
 require 'core.plugins.toggleterm'
 require 'core.plugins.neogit'
+require 'core.plugins.transparent'

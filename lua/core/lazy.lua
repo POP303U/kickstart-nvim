@@ -47,4 +47,5 @@ require("lazy").setup({
 
     -- undotree
     'mbbill/undotree',
+    'xiyaowong/transparent.nvim',
 }, opts)
