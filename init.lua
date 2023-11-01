@@ -13,3 +13,6 @@ require 'core.plugins.rose-pine'
 require 'core.plugins.toggleterm'
 require 'core.plugins.neogit'
 require 'core.plugins.transparent'
+
+-- load graphical settings (only for neovide or nvim-qt)
+require 'core.gui.ginit'
