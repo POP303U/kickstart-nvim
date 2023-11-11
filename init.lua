@@ -7,12 +7,13 @@ require 'core.options'
 require 'core.plugins.treesitter'
 require 'core.plugins.telescope'
 require 'core.plugins.harpoon'
-require 'core.plugins.lsp-zero'
-require 'core.plugins.navigator'
 require 'core.plugins.rose-pine'
 require 'core.plugins.toggleterm'
 require 'core.plugins.neogit'
-require 'core.plugins.transparent'
+require 'core.plugins.oil'
 
 -- load graphical settings (only for neovide or nvim-qt)
 require 'core.gui.ginit'
+
+-- lsp seems to work only when required last
+require 'core.plugins.lsp-zero'

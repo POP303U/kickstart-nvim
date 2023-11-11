@@ -1,13 +1,13 @@
 -- variable for conciseness
-local options            = vim.opt
+local options    = vim.opt
 
-options.mouse = 'a'
+options.mouse    = 'a'
 
-options.backup = false
+options.backup   = false
 options.swapfile = false
 
 -- check for windows and set terminal_emulator
-options.undofile         = true
+options.undofile = true
 if package.config:sub(1, 1) == "/" then
     options.undodir = os.getenv("HOME") .. "/.vim/undodir"
 end
@@ -29,7 +29,8 @@ options.showcmd        = true
 options.laststatus     = 2
 options.autowrite      = true
 options.autoread       = true
-                
+options.colorcolumn    = "80"
+
 -- tabs & indentation
 options.tabstop        = 4
 options.shiftwidth     = 4

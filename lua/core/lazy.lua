@@ -13,9 +13,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    -- Icons
+    'nvim-tree/nvim-web-devicons',
+
     -- Colorscheme --
     'rose-pine/neovim',
     'nvim-treesitter/nvim-treesitter',
+
+    -- Speedy Explorers --
+    'stevearc/oil.nvim',
+    'theprimeagen/harpoon',
 
     -- Fuzzy Finder(s) --
     {
@@ -23,29 +30,22 @@ require("lazy").setup({
         tag = '0.1.4',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
-    'theprimeagen/harpoon',
 
-    -- LSP Config
+    -- LSP Config --
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
-
     { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
 
-    -- Navigation
-    'numToStr/Navigator.nvim',
-    'szw/vim-maximizer',
-
-    -- Git integration
+    -- Git integration --
     'TimUntersberger/neogit',
 
-    -- Terminal
+    -- Terminal --
     { 'akinsho/toggleterm.nvim', version = "*", config = true },
 
-    -- undotree
+    -- undotree --
     'mbbill/undotree',
-    'xiyaowong/transparent.nvim',
 }, opts)
