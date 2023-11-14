@@ -16,4 +16,4 @@ require 'core.plugins.oil'
 require 'core.gui.ginit'
 
 -- lsp seems to work only when required last
-require 'core.plugins.lsp-zero'
+require 'core.plugins.lsp'
