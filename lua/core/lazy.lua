@@ -43,9 +43,6 @@ require("lazy").setup({
     -- Git integration --
     'TimUntersberger/neogit',
 
-    -- Terminal --
-    { 'akinsho/toggleterm.nvim', version = "*", config = true },
-
     -- undotree --
     'mbbill/undotree',
 }, opts)
