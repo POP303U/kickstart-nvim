@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "rust", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = { "rust", "lua" },
 
   sync_install = true,
   auto_install = true,
@@ -9,7 +9,7 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
 
     disable = { },
-    disable = function(lang, buf)
+    disable = function(lang, buf) --make sure nvim doesn't crash
         local max_filesize = 100 * 1024 -- 100 KB
         local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
         if ok and stats and stats.size > max_filesize then
