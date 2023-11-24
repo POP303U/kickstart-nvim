@@ -36,13 +36,5 @@ keymap.set('n', '<leader>g', ':Neogit kind=vsplit<CR>')
 -- Lazy
 keymap.set('n', '<leader>l', ':Lazy<CR>')
 
--- ToggleTerm
-keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir=' .. current_dir .. ' direction=horizontal<CR>')
-keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir=' .. current_dir .. ' direction=vertical<CR>')
-keymap.set('n', '<leader>tf', ':ToggleTerm size=20 dir=' .. current_dir .. ' direction=float<CR>')
-
-keymap.set('t', '<esc>', [[<C-\><C-n>]])
-keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]])
-
 -- Undotree
 keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
