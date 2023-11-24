@@ -1,14 +1,13 @@
 -- variable for conciseness
 local options    = vim.opt
 
-options.mouse    = 'a'
-
 options.backup   = false
 options.swapfile = false
 
 -- check for windows and set terminal_emulator
 options.undofile = true
-if package.config:sub(1, 1) == "/" then
+
+if package.config:sub(1, 1) == "/" then -- doesn't work with windows lol
     options.undodir = os.getenv("HOME") .. "/.vim/undodir"
 end
 
@@ -70,3 +69,4 @@ options.termguicolors  = true
 
 -- fix word detection
 options.iskeyword:append("-")
+options.iskeyword:append("_") -- probably unnecessary :)
