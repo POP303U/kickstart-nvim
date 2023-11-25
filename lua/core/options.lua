@@ -1,70 +1,70 @@
 -- variable for conciseness
-vim.options.backup   = false
-vim.options.swapfile = false
+vim.opt.backup   = false
+vim.opt.swapfile = false
 
 -- check for windows and set terminal_emulator
-vim.options.undofile = true
+vim.opt.undofile = true
 
 if package.config:sub(1, 1) == "/" then -- doesn't work with windows lol
-    vim.options.undodir = os.getenv("HOME") .. "/.vim/undodir"
+    vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 end
 
 -- better searching
-vim.options.hlsearch       = false
-vim.options.incsearch      = true
+vim.opt.hlsearch       = false
+vim.opt.incsearch      = true
 
 -- numbers
-vim.options.number         = true
-vim.options.relativenumber = true
+vim.opt.number         = true
+vim.opt.relativenumber = true
 
 -- chonky cursor
-vim.options.guicursor      = ""
+vim.opt.guicursor      = ""
 
 -- needed config
-vim.options.backspace      = '2'
-vim.options.showcmd        = true
-vim.options.laststatus     = 2
-vim.options.autowrite      = true
-vim.options.autoread       = true
-vim.options.colorcolumn    = "80"
+vim.opt.backspace      = '2'
+vim.opt.showcmd        = true
+vim.opt.laststatus     = 2
+vim.opt.autowrite      = true
+vim.opt.autoread       = true
+vim.opt.colorcolumn    = "80"
 
 -- tabs & indentation
-vim.options.tabstop        = 4
-vim.options.shiftwidth     = 4
-vim.options.softtabstop    = 4
-vim.options.expandtab      = true
-vim.options.autoindent     = true
+vim.opt.tabstop        = 4
+vim.opt.shiftwidth     = 4
+vim.opt.softtabstop    = 4
+vim.opt.expandtab      = true
+vim.opt.autoindent     = true
 
 -- line wrapping
-vim.options.wrap           = false
+vim.opt.wrap           = false
 
 -- search settings
-vim.options.ignorecase     = true
-vim.options.smartcase      = true
+vim.opt.ignorecase     = true
+vim.opt.smartcase      = true
 
 -- set scrolling limit
-vim.options.scrolloff      = 8
+vim.opt.scrolloff      = 8
 
 -- blazingly fast update time
-vim.options.updatetime     = 50
+vim.opt.updatetime     = 50
 
 -- appearance
-vim.options.background     = "dark"
+vim.opt.background     = "dark"
 
 -- split windows
-vim.options.splitright     = true
-vim.options.splitbelow     = true
+vim.opt.splitright     = true
+vim.opt.splitbelow     = true
 
--- indenting vim.options
-vim.options.autoindent     = true -- auto indent
-vim.options.smartindent    = true -- smart indent
-vim.options.tabstop        = 4
-vim.options.shiftwidth     = 4
-vim.options.expandtab      = true
+-- indenting vim.opt
+vim.opt.autoindent     = true -- auto indent
+vim.opt.smartindent    = true -- smart indent
+vim.opt.tabstop        = 4
+vim.opt.shiftwidth     = 4
+vim.opt.expandtab      = true
 
 -- true color 24-bit (for terminals that support it)
-vim.options.termguicolors  = true
+vim.opt.termguicolors  = true
 
 -- fix word detection
-vim.options.iskeyword:append("-")
-vim.options.iskeyword:append("_") -- probably unnecessary :)
+vim.opt.iskeyword:append("-")
+vim.opt.iskeyword:append("_") -- probably unnecessary :)
