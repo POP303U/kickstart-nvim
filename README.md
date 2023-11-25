@@ -75,12 +75,6 @@ Everytime the 'CR' key is mentioned it will refer to the Enter key
 + 'C-e': Close snippets
 + 'CR': Confirm current completion
 
-### vim-tmux-navigator
-+ 'C'h: Move to left buffer
-+ 'C'j: Move to the buffer above
-+ 'C'k: Move to the buffer below
-+ 'C'l: Move to right buffer
-
 ### lsp-zero
 + 'gd': Jumps to problems or diagnostics in code
 + 'K': Get info about a variable, function etc.
