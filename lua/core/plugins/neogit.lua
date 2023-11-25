@@ -4,7 +4,7 @@ require("neogit").setup({
         -- { CLOSED, OPENED }
         section = { " ", " " },
         item = { " ", " " },
-        hunk = { "", "" },
+        hunk = { " ", " " },
     },
     integrations = { diffview = true }, -- adds integration with diffview.nvim
 })
