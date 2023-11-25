@@ -1,5 +1,5 @@
-# simple-nvim
-Barebones Neovim Configuration
+# kickstart-nvim
+Kickstart your neovim configuration!
 
 ## Setup
 Uninstall any existing config you might have installed!
