@@ -6,7 +6,7 @@ require 'core.options'
 -- load plugins settings
 require 'core.plugins.treesitter'
 require 'core.plugins.telescope'
-require 'core.plugins.rose-pine'
+require 'core.plugins.colorscheme'
 require 'core.plugins.harpoon'
 require 'core.plugins.neogit'
 require 'core.plugins.oil'
