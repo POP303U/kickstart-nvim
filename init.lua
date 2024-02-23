@@ -12,7 +12,7 @@ require 'core.plugins.neogit'
 require 'core.plugins.oil'
 
 -- load graphical settings (only for neovide or nvim-qt) enable if you want
--- require 'core.gui.ginit'
+require 'core.gui.ginit'
 
 -- lsp seems to work only when required last
 require 'core.plugins.lsp'
